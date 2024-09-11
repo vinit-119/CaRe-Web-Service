@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleep Tracking</title>
+  <link rel="stylesheet" href="sleepTracking.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="" alt="">CaRe Wellness App</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="loginPage.html">Login</a></li>
+            <li><a href="patientDashboard.html">Patient Dashboard</a></li>
+            <li><a href="therapistDashboard.html">Therapist Dashboard</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+  <div class="container">
+    <h1>Sleep Tracking</h1>
+    <form id="sleepForm">
+      <label for="start">Sleep Start Time:</label>
+      <input type="time" id="start" required>
+
+      <label for="end">Sleep End Time:</label>
+      <input type="time" id="end" required>
+
+      <label for="quality">Sleep Quality:</label>
+      <select id="quality" required>
+        <option value="poor">Poor</option>
+        <option value="fair">Fair</option>
+        <option value="good">Good</option>
+        <option value="excellent">Excellent</option>
+      </select>
+
+      <label for="notes">Notes:</label>
+      <textarea id="notes" rows="3" placeholder="Enter any sleep notes..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    
+    <div id="sleepSummary" class="hidden">
+      <h2>Sleep Summary</h2>
+      <p id="hoursSlept"></p>
+      <p id="sleepQuality"></p>
+      <p id="sleepNotes"></p>
+    </div>
+  </div>
+  
+  <script src="sleepTracking.js"></script>
+</body>
+</html>

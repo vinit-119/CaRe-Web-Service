@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Journal</title>
+  <link rel="stylesheet" href="dailyJournal.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="" alt="">CaRe Wellness App</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="loginPage.html">Login</a></li>
+            <li><a href="patientDashboard.html">Patient Dashboard</a></li>
+            <li><a href="therapistDashboard.html">Therapist Dashboard</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+  <div class="container">
+    <h1>Daily Journal</h1>
+
+    <!-- Optional Writing Prompts -->
+    <div class="writing-prompts">
+      <h2>Writing Prompts</h2>
+      <p>Need help getting started? Try answering these:</p>
+      <ul>
+        <li>What made you smile today?</li>
+        <li>Describe one challenge you faced today.</li>
+        <li>What are you grateful for today?</li>
+      </ul>
+    </div>
+
+    <form id="journalForm">
+      <!-- Date Picker -->
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <!-- Mood Selector -->
+      <label for="mood">Mood:</label>
+      <select id="mood" required>
+        <option value="1">😔 Sad</option>
+        <option value="2">🙁 Unhappy</option>
+        <option value="3">😐 Neutral</option>
+        <option value="4">🙂 Happy</option>
+        <option value="5">😁 Excited</option>
+      </select>
+
+      <!-- Journal Entry -->
+      <label for="entry">Journal Entry:</label>
+      <textarea id="entry" rows="5" placeholder="Write your thoughts here..." required></textarea>
+
+      <!-- Tags -->
+      <label for="tags">Tags:</label>
+      <input type="text" id="tags" placeholder="e.g., Work, Stress, Family">
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Journal Summary/History Section -->
+    <div id="journalHistory">
+      <h2>Journal History</h2>
+      <div id="journalSummary"></div>
+    </div>
+  </div>
+
+  <script src="dailyjournal.js"></script>
+</body>
+</html>
