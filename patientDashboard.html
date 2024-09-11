@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="patientDashboard.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="" alt="">CaRe Wellness App</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="loginPage.html">Login</a></li>
+                <li><a href="patientDashboard.html">Patient Dashboard</a></li>
+                <li><a href="therapistDashboard.html">Therapist Dashboard</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Patient Dashboard Container -->
+
+<section class="patient-dashboard">
+    <h1>Welcome, to caRe wellness Patient dashboard</h1>
+    <section class="patient-profile">
+        <div class="profile-image">
+            <img src="ketu profile pic.png" alt="Patient Profile Picture">
+        </div>
+        <div class="profile-details">
+            <h2>Ketu Patel</h2>
+            <p><strong>Age:</strong> 30</p>
+            <p><strong>Email:</strong>ketupatel@gmail.com</p>
+            <p><strong>Phone:</strong> 0494181459</p>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Address:</strong> 123 Wellness Lane, Healthy City</p>
+            <a href="patientProfile.html"><button class="submit-btn">View Profile</button></a>
+        </div>
+    </section>
+    
+    <img src="" alt="">
+    <!-- Weekly Summary Section -->
+    <section class="weekly-summary">
+        <h2>Weekly Summary</h2>
+        <div class="summary-container">
+            <div class="summary-item">
+                <h3>Sleep</h3>
+                <p>Average Sleep: 7 hours</p>
+            </div>
+            <div class="summary-item">
+                <h3>Mood</h3>
+                <p>Average Mood: 😊</p>
+            </div>
+            <div class="summary-item">
+                <h3>Eating Habits</h3>
+                <p>Healthy Days: 5/7</p>
+            </div>
+            <div class="summary-item">
+                <h3>Exercise</h3>
+                <p>Workouts: 4</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Record Activity Section -->
+    <section class="record-activity">
+        <h2>Record Activity</h2>
+        <form>
+            <div class="form-group">
+                <label for="sleep">Sleep Hours:</label>
+                <input type="number" id="sleep" name="sleep" placeholder="e.g., 7">
+            </div>
+            <div class="form-group">
+                <label for="mood">Mood:</label>
+                <select id="mood" name="mood">
+                    <option value="😊">😊</option>
+                    <option value="😐">😐</option>
+                    <option value="😞">😞</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="eating">Eating Habits:</label>
+                <input type="text" id="eating" name="eating" placeholder="Healthy/Unhealthy">
+            </div>
+            <div class="form-group">
+                <label for="exercise">Exercise:</label>
+                <input type="number" id="exercise" name="exercise" placeholder="Minutes of exercise">
+            </div>
+            <button type="submit" class="submit-btn">Submit Activity</button>
+        </form>
+    </section>
+
+    <!-- Weekly Goals and Affirmations Section -->
+    <section class="goals-affirmations">
+        <h2>Set Weekly Goals & Choose Affirmations</h2>
+        <form>
+            <div class="form-group">
+                <label for="goal">Set a Goal:</label>
+                <input type="text" id="goal" name="goal" placeholder="e.g., Sleep 8 hours daily">
+            </div>
+            <div class="form-group">
+                <label for="affirmation">Choose an Affirmation:</label>
+                <select id="affirmation" name="affirmation">
+                    <option value="I am strong and resilient.">I am strong and resilient.</option>
+                    <option value="Today is a fresh start.">Today is a fresh start.</option>
+                    <option value="I trust the process of life.">I trust the process of life.</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Set Goal</button>
+        </form>
+    </section>
+
+   <!-- Updated View Past Journals and Records Section -->
+<section class="view-records">
+    <h2>View Past Journals & Records</h2>
+    
+    <!-- Filter Options -->
+    <div class="filter-options">
+        <label for="filter">Filter By:</label>
+        <select id="filter">
+            <option value="all">All Records</option>
+            <option value="sleep">Sleep</option>
+            <option value="mood">Mood</option>
+            <option value="exercise">Exercise</option>
+        </select>
+    </div>
+    
+
+    <div class="chart-container">
+        <h3>Weekly Mood Chart</h3>
+        <iframe src="https://giphy.com/embed/dX3nN2P7CgWiDtURzc" width="100%" height="271"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <canvas id="moodChart" width="400" height="200"></canvas>
+    </div>
+
+
+    <div class="record-list">
+        <div class="record-item">
+            <h3>Week of 09/01/2024</h3>
+            <p>Sleep: 7 hours/day | Mood: 😊 | Eating: Healthy | Exercise: 4 days</p>
+            <button class="toggle-details">View Details</button>
+            <div class="journal-details hidden">
+                <p><strong>Journal Entry:</strong> "This week was productive. I felt energized and balanced, especially with regular workouts."</p>
+                <p><strong>Goal:</strong> Maintain the same sleep routine and increase workout duration.</p>
+                <p><strong>Affirmation:</strong> "I am strong and resilient."</p>
+            </div>
+        </div>
+        <div class="record-item">
+            <h3>Week of 09/08/2024</h3>
+            <p>Sleep: 6 hours/day | Mood: 😐 | Eating: Unhealthy | Exercise: 2 days</p>
+            <button class="toggle-details">View Details</button>
+            <div class="journal-details hidden">
+                <p><strong>Journal Entry:</strong> "This week was challenging. Struggled with sleep and eating habits, felt low energy."</p>
+                <p><strong>Goal:</strong> Focus on eating healthier and improving sleep quality.</p>
+                <p><strong>Affirmation:</strong> "Today is a fresh start."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+<footer class="motivational-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h4>Contact Us</h4>
+            <p>Email: support@carewellness.com</p>
+            <p>Phone: +1 800 123 456</p>
+        </div>
+        <div class="footer-middle">
+            <blockquote>
+                "Wellness is a journey, not a destination. Take it one step at a time."
+            </blockquote>
+        </div>
+        <div class="footer-right">
+            <p>Follow Us:</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

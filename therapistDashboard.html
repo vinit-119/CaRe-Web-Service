@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Dashboard</title>
+    <link rel="stylesheet" href="therapistDashboard.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="" alt="">CaRe Wellness App</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="loginPage.html">Login</a></li>
+                <li><a href="patientDashboard.html">Patient Dashboard</a></li>
+                <li><a href="therapistDashboard.html">Therapist Dashboard</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Therapist Overview Dashboard -->
+    <section class="therapist-dashboard">
+        <h1>Welcome, to caRe Wellness Therapist Dashboard</h1>
+        <section class="therapist-profile">
+            <div class="profile-image">
+                <img src="monica hill therapist.webp" alt="Therapist Profile Picture">
+            </div>
+            <div class="profile-details">
+                <h2>Dr Monica Hill</h2>
+                <p><strong>Specialty:</strong> Anxiety and Stress Management</p>
+                <p><strong>Experience:</strong> 10 Years</p>
+                <p><strong>Email:</strong> reception@kensingtonpsychology.com</p>
+                <p><strong>Phone:</strong>
+                    08 7006 5225</p>
+                <p><strong>License Number:</strong> 12345678</p>
+                <a href="therapistProfile.html"><button class="submit-btn">Edit Profile</button></a>
+            </div>
+        </section>
+        <!-- Patient Summary Section -->
+        <section class="patient-summary">
+            <a href="recordPatient.html">
+            <h2>Patient Summary</h2>
+            <div class="summary-container">
+                <div class="summary-item">
+                        <h3>Active Patients</h3>
+                        <p>12</p>
+                    </div>
+                    <div class="summary-item">
+                        <h3>Patients Requiring Urgent Attention</h3>
+                        <p>3</p>
+                    </div>
+                    <div class="summary-item">
+                        <h3>Recent Activities</h3>
+                        <p>15 activities logged in the last 7 days</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Upcoming Appointments Section -->
+        <section class="upcoming-appointments">
+            <h2>Upcoming Appointments</h2>
+            <div class="appointment-list">
+                <div class="appointment-item">
+                    <a href="patientDashboard.html"><button class="view-details-btn">View Details</button></a>
+                    <div class="appointment-info">
+                        <h3>Ketu Patel- 1:00 PM, Mon Sep 18</h3>
+                        <p>Individual Therapy Session</p>
+                    </div>
+                </div>
+                <div class="appointment-item">
+                    <a href="home.html#groupChat"><button class="view-details-btn">View Details</button></a>
+                    <div class="appointment-info">
+                        <h3>Group Therapy - 3:00 PM, Tue Sep 19</h3>
+                        <p>Anxiety Support Group</p>
+                    </div>
+                </div>
+                <div class="appointment-item">
+                    <a href="patientDashboard.html"><button class="view-details-btn">View Details</button></a>
+                    <div class="appointment-info">
+                        <h3>Jane Smith - 11:00 AM, Wed Sep 20</h3>
+                        <p>Follow-Up Session</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alerts and Reminders Section -->
+        <section class="alerts-reminders">
+            <h2>Alerts & Reminders</h2>
+            <div class="alert-list">
+                <div class="alert-item">
+                    <p><strong>Reminder:</strong> You have a session with John Doe in 2 hours.</p>
+                </div>
+                <div class="alert-item">
+                    <p><strong>Urgent:</strong> Jane Smith has not logged any activities for 5 days.</p>
+                </div>
+                <div class="alert-item">
+                    <p><strong>Reminder:</strong> Group Therapy for anxiety scheduled tomorrow at 3 PM.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Therapist Performance Section -->
+        <section class="therapist-performance">
+            <h2>Your Performance</h2>
+            <div class="performance-container">
+                <div class="performance-item">
+                    <h3>Sessions Conducted This Week</h3>
+                    <p>8</p>
+                </div>
+                <div class="performance-item">
+                    <h3>Total Active Sessions</h3>
+                    <p>5</p>
+                </div>
+                <div class="performance-item">
+                    <h3>Average Session Duration</h3>
+                    <p>50 minutes</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>
