@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/dailyjornaling.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daily Journaling</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Daily Journaling</h1>
+        </header>
+        <main>
+            <section class="journal-entry">
+                <h2>Today's Entry</h2>
+                <form id="journal-form">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <label for="emotion">Emotion:</label>
+                    <select id="emotion" name="emotion">
+                        <option value="happy">Happy</option>
+                        <option value="sad">Sad</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="angry">Angry</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="entry">Entry:</label>
+                    <textarea id="entry" name="entry"></textarea>
+                    <button id="submit-btn">Submit</button>
+                </form>
+            </section>
+            <section class="journal-entries">
+                <h2>Previous Entries</h2>
+                <ul id="entries-list"></ul>
+            </section>
+        </main>
+    </body>
+    </html>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Tracking</title>
+    <link rel="stylesheet" href="/css/sleeptracking.css">
+</head>
+<body>
+    <header>
+        <h1>Sleep Tracking</h1>
+    </header>
+    <main>
+        <section class="sleep-tracker">
+            <h2>Sleep Tracker</h2>
+            <form id="sleep-form">
+                <label for="sleep-date">Date:</label>
+                <input type="date" id="sleep-date" name="sleep-date">
+                <label for="sleep-duration">Sleep Duration:</label>
+                <input type="number" id="sleep-duration" name="sleep-duration" placeholder="Hours">
+                <label for="sleep-quality">Sleep Quality:</label>
+                <select id="sleep-quality" name="sleep-quality">
+                    <option value="poor">Poor</option>
+                    <option value="fair enough">Fair</option>
+                    <option value="good">Good</option>
+                    <option value="excellent">Excellent</option>
+                </select>
+                <button id="submit-btn">Submit</button>
+            </form>
+        </section>
+        <section class="sleep-data">
+            <h2>Sleep Data</h2>
+            <ul id="sleep-list"></ul>
+        </section>
+        <section class="sleep-stats">
+            <h2>Sleep Statistics</h2>
+            <p id="average-sleep-duration"></p>
+            <p id="average-sleep-quality"></p>
+        </section>
+    </main>
+   
+</body>
+</html>
+</body>
+</html>

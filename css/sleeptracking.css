@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.sleep-tracker {
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.sleep-tracker h2 {
+    margin-top: 0;
+}
+
+.sleep-tracker form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sleep-tracker label {
+    margin-bottom: 0.5em;
+}
+
+.sleep-tracker input, .sleep-tracker select {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+
+.sleep-tracker button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sleep-tracker button:hover {
+    background-color: #444;
+}
+
+.sleep-data {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sleep-data h2 {
+    margin-top: 0;
+}
+
+.sleep-data ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sleep-data li {
+    padding: 0.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+.sleep-data li:last-child {
+    border-bottom: none;
+}
+
+.sleep-stats {
+    background-color: #fff;
+    padding: 1px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sleep-stats h2 {
+    margin-top: 0;
+}
+
+.sleep-stats p {
+    margin-bottom: 1em;
+}
+#sleep-form{
+    justify-content: center;
+}
